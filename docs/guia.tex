@@ -1,7 +1,7 @@
 \documentclass[11pt,a4paper]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[spanish]{babel}
-\usepackage{hyperref}
+\usepackage[hidelinks]{hyperref}
 \usepackage{geometry}
 \geometry{margin=2.5cm}
 
@@ -12,6 +12,9 @@
 \begin{document}
 
 \maketitle
+
+\tableofcontents
+\newpage
 
 \section{Introducción}
 El presente documento analiza una serie de guías metodológicas orientadas a la profesionalización del \textit{Prompt Engineering}. La documentación revisada propone una transición del uso empírico de la Inteligencia Artificial Generativa hacia un enfoque científico y estructurado, fundamentado en estándares de líderes de la industria como Google, IBM y DeepLearning.ai.
@@ -46,7 +49,34 @@ Se destaca la importancia de guiar el proceso lógico del modelo, transformándo
 \end{itemize}
 
 \section{Optimización e Iteración}
-El proceso se define como intrínsecamente iterativo. Se promueve un ciclo de optimización que incluye auditoría de contexto, atomización de instrucciones y el uso de \textbf{Metaprompting}, donde la IA actúa como ingeniero de requisitos para refinar la solicitud inicial antes de ejecutarla.
+El proceso de Prompt Engineering es intrínsecamente iterativo. Si un resultado inicial no cumple con el estándar de calidad, se aplica un ciclo de refinamiento basado en las siguientes técnicas:
+\begin{itemize}
+    \item \textbf{Metaprompting (Optimización Recursiva):} Se delega a la propia IA la tarea de optimizar la instrucción. Se le pide que actúe como un experto en Prompt Engineering y realice las preguntas necesarias para construir un prompt de alta fidelidad.
+    \item \textbf{Atomización Instruccional:} Las instrucciones complejas se descomponen en una lista de acciones simples y numeradas para reducir la carga cognitiva del modelo y asegurar que cada paso se ejecute.
+    \item \textbf{Desplazamiento de Perspectiva:} Se solicita a la IA que reevalúe un tema desde un rol diferente o antagónico (ej. de un Director de Marketing a un CFO escéptico) para descubrir nuevos ángulos de análisis y puntos ciegos.
+    \item \textbf{Restricciones de Salida:} Se imponen límites explícitos sobre el formato y contenido, como la prohibición de usar clichés corporativos (restricción negativa) o la definición de una longitud máxima por párrafo.
+\end{itemize}
+
+\section{Comparativa de Ejemplos Prácticos}
+Se han desarrollado ejemplos específicos para ilustrar la diferencia entre razonamiento lineal y ramificado:
+
+\begin{itemize}
+    \item \textbf{Ejemplo 1 (ROSAS + CoT):} Este caso utiliza una estructura secuencial (Chain of Thought) apoyada en el marco ROSAS. Es la aproximación ideal para tareas operativas y técnicas donde se busca precisión y un flujo de trabajo lineal (Paso 1 $\rightarrow$ Paso 2 $\rightarrow$ Paso 3).
+    \item \textbf{Ejemplo 2 (Tree of Thoughts):} Este caso aplica una lógica divergente. En lugar de una línea recta, genera múltiples ramas de solución simultáneas, las evalúa comparativamente y converge en la mejor opción. Es la técnica recomendada para decisiones estratégicas complejas.
+    \item \textbf{Ejemplo 3 (Few-Shot Prompting):} Este caso demuestra cómo calibrar el estilo y tono mediante el contraste de ejemplos positivos y negativos. Es la técnica esencial para alinear la voz de la IA con la identidad corporativa o personal, bajo la premisa "mostrar es mejor que decir".
+    \item \textbf{Ejemplo 4 (Desplazamiento de Perspectiva):} Ilustra el ciclo de refinamiento. Se genera una propuesta inicial y luego se instruye a la IA para que cambie de rol (de Marketing a Auditor de Riesgos) para criticar y fortalecer su propia idea, eliminando puntos ciegos y riesgos operativos.
+\end{itemize}
+
+\section{Checklist de Gobernanza y Validación}
+Antes de validar una instrucción, se debe verificar el cumplimiento del flujo metodológico mediante los siguientes puntos de control:
+\begin{itemize}
+    \item \textbf{[ ] Inferencia de Rol:} ¿Se ha delimitado el espacio de probabilidad profesional?
+    \item \textbf{[ ] Precisión de Contexto:} ¿La situación elimina la necesidad de que la IA ``adivine''?
+    \item \textbf{[ ] Alineación de Patrones (Few-Shot):} ¿Se han incluido ejemplos para guiar el espacio latente?
+    \item \textbf{[ ] Protocolo de Razonamiento:} ¿Se requiere CoT explícito o es un modelo razonador nativo?
+    \item \textbf{[ ] Refinamiento de Restricciones:} ¿Existen límites que fuercen un output de alta fidelidad?
+    \item \textbf{[ ] Fase Diagnóstica:} ¿Se ha realizado un Metaprompting previo para asegurar la suficiencia de los datos?
+\end{itemize}
 
 \section{Opinión Técnica}
 Tras analizar los documentos, considero que esta metodología representa un estándar de excelencia para la implementación corporativa de IA. Sus puntos fuertes son:

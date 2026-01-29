@@ -1,0 +1,76 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{geometry}
+\geometry{margin=2.5cm}
+\usepackage{array}
+\usepackage{xcolor}
+\usepackage{listings}
+\usepackage{hyperref}
+
+\lstset{
+    basicstyle=\ttfamily\small,
+    breaklines=true,
+    frame=single,
+    backgroundcolor=\color{gray!10},
+    extendedchars=true,
+    literate={á}{{\'a}}1 {é}{{\'e}}1 {í}{{\'i}}1 {ó}{{\'o}}1 {ú}{{\'u}}1 {ñ}{{\~n}}1
+}
+
+\title{Ejemplo Práctico: Refinamiento por Desplazamiento de Perspectiva}
+\author{Gemini Code Assist}
+\date{\today}
+\begin{document}
+\maketitle
+
+
+Este documento ilustra cómo utilizar la técnica de \textbf{Desplazamiento de Perspectiva} para auditar y fortalecer una idea. Esta técnica consiste en pedirle a la IA que critique o mejore su propio trabajo asumiendo un rol antagónico o complementario. \\
+
+\section{Escenario del Caso}
+\textbf{Contexto:} Un equipo de producto ha diseñado una nueva funcionalidad "Gamificada" para una app bancaria. El primer borrador (generado por un rol de Marketing) es muy entusiasta pero podría ignorar riesgos regulatorios o de usuario. \\
+
+\vspace{0.5cm}
+
+\section{Paso 1: El Prompt Inicial (Generación)}
+
+Primero, generamos la idea base usando el marco ROSAS estándar. \\
+
+\begin{lstlisting}
+**Rol:** Product Manager enfocado en Engagement y Gamificación.
+**Objetivo:** Describir los beneficios de la nueva función "Retos de Ahorro" para la app bancaria.
+**Situación:** Queremos aumentar la retención de usuarios jóvenes (Gen Z) mediante recompensas inmediatas.
+**Acción:** Lista 3 beneficios clave y un slogan atractivo que fomente el uso compulsivo de la app.
+\end{lstlisting}
+
+\textit{(Supongamos que la IA genera una respuesta muy optimista sobre puntos, medallas y diversión adictiva).} \\
+
+\vspace{0.5cm}
+
+\section{Paso 2: El Prompt de Refinamiento (Desplazamiento de Perspectiva)}
+
+Aquí es donde aplicamos la técnica. En lugar de pedir "mejora esto", forzamos un cambio de lente radical para encontrar fallos. \\
+
+\begin{lstlisting}
+**Instrucción de Refinamiento:**
+
+"Perfecto. Ahora mantén esa propuesta en memoria, pero cambia completamente tu rol.
+
+**Nuevo Rol:** Actúa como un **Chief Risk Officer (CRO)** y Auditor de Cumplimiento Normativo muy conservador.
+
+**Acción:**
+1. Critica despiadadamente la propuesta anterior. Busca riesgos de adicción al juego (ludopatía), problemas de privacidad y trivialización de las finanzas.
+2. Propón 3 'Guardarraíles' o límites de seguridad que debemos implementar para mitigar estos riesgos sin matar la funcionalidad.
+"
+\end{lstlisting}
+
+\vspace{0.5cm}
+
+\section{Paso 3: Síntesis Final (El Resultado Robusto)}
+
+\begin{lstlisting}
+"Ahora, actúa como el **CEO**. Integra la creatividad de la propuesta inicial con la seguridad del reporte de riesgos. Redacta la especificación final de la funcionalidad equilibrando ambos mundos."
+\end{lstlisting}
+
+\subsection{¿Por qué funciona esto?}
+El Desplazamiento de Perspectiva rompe el "sesgo de complacencia" de la IA. Al forzarla a adoptar una postura crítica o antagónica, descubres puntos ciegos que un solo prompt, por muy bueno que sea, no podría revelar. \\
+\end{document}
