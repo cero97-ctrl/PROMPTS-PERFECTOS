@@ -1,16 +1,3 @@
----
-exported: 2026-01-29T01:33:05.297Z
-source: NotebookLM
-type: report
-title: "GUÍA METODOLÓGICA: ESTANDARIZACIÓN DE LA COMUNICACIÓN ESTRATÉGICA CON IA GENERATIVA"
----
-
-# GUÍA METODOLÓGICA: ESTANDARIZACIÓN DE LA COMUNICACIÓN ESTRATÉGICA CON IA GENERATIVA
-
-导出时间: 28/1/2026, 9:33:05 p. m.
-
----
-
 # GUÍA METODOLÓGICA: ESTANDARIZACIÓN DE LA COMUNICACIÓN ESTRATÉGICA CON IA GENERATIVA
 
 ## 1\. Fundamentos Científicos del Prompt Engineering: El Estándar de Google, IBM y DeepLearning.ai

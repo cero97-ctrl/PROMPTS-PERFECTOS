@@ -1,16 +1,3 @@
----
-exported: 2026-01-29T01:30:16.994Z
-source: NotebookLM
-type: report
-title: "Protocolo de Decisión Estratégica: Integración de Razonamiento Multilineal de IA"
----
-
-# Protocolo de Decisión Estratégica: Integración de Razonamiento Multilineal de IA
-
-导出时间: 28/1/2026, 9:30:16 p. m.
-
----
-
 # Protocolo de Decisión Estratégica: Integración de Razonamiento Multilineal de IA
 
 ## 1\. Marco Conceptual: La Ciencia del Prompting Profesional

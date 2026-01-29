@@ -1,16 +1,3 @@
----
-exported: 2026-01-29T01:25:50.609Z
-source: NotebookLM
-type: report
-title: "Guía Práctica: El Poder del Ejemplo (Few-Shot Prompting)"
----
-
-# Guía Práctica: El Poder del Ejemplo (Few-Shot Prompting)
-
-导出时间: 28/1/2026, 9:25:50 p. m.
-
----
-
 # Guía Práctica: El Poder del Ejemplo (Few-Shot Prompting)
 
 ## 1\. La Gran Diferencia: Decir vs. Mostrar
